@@ -124,6 +124,12 @@ public class RegisterActivity extends AppCompatActivity {
 
             return;
         }
+        if (!fullname.isEmpty()&&et_fullname.isErrorEnabled()) {
+            et_fullname.setErrorEnabled(false);
+
+            return;
+        }
+
         if (email.isEmpty()) {
             inputlayout.requestFocus();
             inputlayout.setError("Please Enter email !");
