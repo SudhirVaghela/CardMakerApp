@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/linearlayout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/close" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearlayout_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearlayout_1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:text="Create Account"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/tv_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_edit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/profile_image"
+                android:layout_toEndOf="@id/profile_image"
+                android:layout_marginTop="-60dp"
+                android:layout_marginLeft="-40dp"
+                android:src="@drawable/pencil2"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_fullname"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_image"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center_vertical"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@null">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/inputlayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_fullname"
+                android:layout_marginStart="30dp"
+                app:errorEnabled="true"
+                android:layout_marginEnd="30dp"
+                app:errorIconDrawable="@null"
+                android:gravity="center_vertical">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edittext_pass"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputlayout"
+                android:layout_marginStart="30dp"
+                app:errorEnabled="true"
+                android:layout_marginEnd="30dp"
+                android:gravity="center_vertical"
+                app:errorIconDrawable="@null"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_signin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/edittext_pass"
+                android:layout_alignStart="@id/edittext_pass"
+                android:layout_alignEnd="@id/edittext_pass"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/custome_btn"
+                android:backgroundTint="@color/btn_pink"
+                android:drawableLeft="@drawable/arrow"
+                android:drawablePadding="-110dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="110dp"
+                android:text="sign in"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_signin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_signin"
+                android:layout_alignStart="@+id/btn_signin"
+                android:layout_alignEnd="@+id/btn_signin"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center_horizontal"
+                android:text="Sign In"
+                android:textAllCaps="true"
+                android:textColor="@color/light_gray" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

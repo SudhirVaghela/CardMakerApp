@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="btn_pink">#ff5c9e</color>
+    <color name="btn_selected">#f0f4f8</color>
+    <color name="light_gray">#a7bdd1</color>
+    <color name="top_bg_color">#b6f0fe</color>
+    <color name="colorPrimary">@color/top_bg_color</color>
+    <color name="colorPrimaryDark">@color/top_bg_color</color>
+    <color name="colorAccent">@color/btn_pink</color>
+
+</resources>
